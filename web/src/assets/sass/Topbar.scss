@@ -1,0 +1,44 @@
+@use 'reset';
+@use './variables/' as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+.page-1 {
+    #LT-header {
+        .LT-Topbar {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100%;
+
+            @media (max-width:1024px) {
+                height: 100%;
+            }
+
+            @media (max-width:640px) {
+                height: 100%;
+            }
+
+            .LT-title {
+                display: flex;
+                position: relative;
+                align-items: center;
+                font-size: 24px; // LOGO 字體大小
+                margin: 0 30px 0 60px; // 與左側距離
+                color: #5A4636; // 深棕色字體，與背景形成良好對比
+                font-weight: 600; // 加粗字體，突顯 LOGO
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); // 添加立體感的陰影
+                font-family: "Noto Sans TC", serif;
+                letter-spacing: 1px; // 增加字母間距，提升辨識度
+                text-transform: uppercase; // 全部大寫，增加品牌感
+
+                .logoimg {
+                    height: 90px;
+                    width: 100px;
+                    margin: 0 -20px;
+                }
+            }
+        }
+    }
+}
