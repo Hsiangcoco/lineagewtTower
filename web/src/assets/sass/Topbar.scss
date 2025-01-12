@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 
-.page-1 {
+.LT-Topbar-page {
     #LT-header {
         .LT-Topbar {
             display: flex;
@@ -33,11 +33,137 @@
                 letter-spacing: 1px; // 增加字母間距，提升辨識度
                 text-transform: uppercase; // 全部大寫，增加品牌感
 
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: -10px;
+                    transform: translateY(-50%);
+                    width: 10px;
+                    height: 40px;
+                    background-color: #DAA520; // 金黃色裝飾色
+                    border-radius: 5px;
+                    margin-right: 10px;
+                }
+
                 .logoimg {
                     height: 90px;
                     width: 100px;
                     margin: 0 -20px;
+
+                    @media (max-width:1024px) {
+                        height: 45px;
+                    }
+
+                    @media (max-width:640px) {
+                        height: 45px;
+                        width: 100px;
+                    }
+
+
                 }
+            }
+
+            .LT-Navbar {
+                color: $text-color; // 主文字色
+                display: flex;
+                justify-content: flex-start;
+                font-weight: 500;
+                margin-right: 50px;
+
+                a {
+                    p {
+                        margin: 15px;
+                        padding: 5px 10px;
+                        border: 1px solid $border-color; // 邊框色
+                        background-color: $highlight-color; // 背景色
+                        border-radius: 10px;
+                        box-shadow: 2px 2px $shadow-color; // 陰影
+                        color: $text-color; // 文字色
+
+                        &:hover {
+                            background-color: $color-secondary-1; // 懸停背景色
+                            color: $color-secondary; // 懸停文字色
+                            box-shadow: 2px 2px rgba(0, 0, 0, 0.2); // 輕微陰影
+                        }
+                    }
+                }
+            }
+
+            .LT-announcement {
+                display: flex;
+                margin-right: 50px;
+                padding: 5px 0;
+                background-color: $color-secondary-1; // 背景色
+                width: 30%;
+                border: 2px solid $color-secondary; // 邊框色
+                border-radius: 5px;
+
+                @media (max-width:1024px) {
+                    width: 50%;
+                    flex: 1 1 100%;
+                    margin-bottom: 10px;
+                }
+
+                @media (max-width:640px) {
+                    margin: 0px;
+                }
+
+                .LT-announcement-1 {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 15px;
+
+                    @media (max-width:640px) {
+                        margin: 0 10px;
+                    }
+
+                    p {
+                        font-size: $font-size-xs; // 小字體大小
+                        color: #D35D47; // 錯誤文字顏色
+                        font-weight: bold;
+                        font-size: 16px;
+
+                    }
+                }
+
+                .LT-announcement-scroll {
+                    overflow: hidden; // 隱藏超出部分
+                    height: 25px;
+                    position: relative;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        transition: transform 0.8s ease-in-out; // 平滑過渡
+                        position: relative;
+
+                        li {
+                            height: 25px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            font-size: 16px;
+
+                            a {
+                                text-decoration: none;
+                                color: #333;
+                                font-weight: bold;
+
+                                &:hover {
+                                    color: #0078d4;
+                                }
+                            }
+
+                            &.active {
+                                font-weight: bold; // 活動項目加粗
+                                color: #0056b3;
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
