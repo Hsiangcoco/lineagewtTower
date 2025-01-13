@@ -1,5 +1,5 @@
 @use 'reset';
-@use './variables/' as *;
+@use './variables/'as *;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 
@@ -11,14 +11,6 @@
             align-items: center;
             flex-wrap: wrap;
             height: 100%;
-
-            @media (max-width:1024px) {
-                height: 100%;
-            }
-
-            @media (max-width:640px) {
-                height: 100%;
-            }
 
             .LT-title {
                 display: flex;
@@ -32,6 +24,11 @@
                 font-family: "Noto Sans TC", serif;
                 letter-spacing: 1px; // 增加字母間距，提升辨識度
                 text-transform: uppercase; // 全部大寫，增加品牌感
+
+                @media (max-width:640px) {
+                    margin: 0 30px 0 15px;
+
+                }
 
                 &::before {
                     content: '';
@@ -98,11 +95,10 @@
                 width: 30%;
                 border: 2px solid $color-secondary; // 邊框色
                 border-radius: 5px;
+                overflow: hidden;
 
                 @media (max-width:1024px) {
-                    width: 50%;
-                    flex: 1 1 100%;
-                    margin-bottom: 10px;
+                    width: 100%;
                 }
 
                 @media (max-width:640px) {
@@ -122,15 +118,23 @@
                         font-size: $font-size-xs; // 小字體大小
                         color: #D35D47; // 錯誤文字顏色
                         font-weight: bold;
-                        font-size: 16px;
+                        font-size: 14px;
+                        white-space: nowrap;
+                        /* 禁止文字換行 */
 
                     }
                 }
 
                 .LT-announcement-scroll {
-                    overflow: hidden; // 隱藏超出部分
+                    white-space: nowrap;
+                    /* 禁止文字換行 */
+                    overflow: hidden;
+                    /* 超出容器部分隱藏 */
+                    text-overflow: ellipsis;
+                    /* 用省略號表示被截斷的文字 */
                     height: 25px;
                     position: relative;
+
 
                     ul {
                         list-style: none;
@@ -145,6 +149,13 @@
                             align-items: center;
                             justify-content: flex-start;
                             font-size: 16px;
+                            white-space: nowrap;
+                            /* 禁止文字換行 */
+                            overflow: hidden;
+                            /* 超出容器部分隱藏 */
+                            text-overflow: ellipsis;
+                            /* 用省略號表示被截斷的文字 */
+                            
 
                             a {
                                 text-decoration: none;

@@ -1,5 +1,5 @@
 @use 'reset';
-@use './variables/' as *;
+@use './variables/'as *;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 
@@ -15,7 +15,8 @@
     }
 
     @media (max-width:640px) {
-        display: flex;
+        height: auto;
+        width: auto;
     }
 
     .LT-bg-alltop {
@@ -143,4 +144,3 @@
         width: 100%;
     }
 }
-
