@@ -33,7 +33,7 @@ export default function YoutubeScroll() {
     const handleScrollRight = () => {
         const carousel = carouselRef.current;
         if (carousel) {
-            const itemWidth = carousel.firstChild.offsetWidth; // 獲取單個項目的寬度
+            const itemWidth = carousel.firstChild.offsetWidth + 10; // 獲取單個項目的寬度
             const maxScroll = (youtubeVideos.length - visibleItems) * itemWidth; // 最大可滾動的寬度
 
             if (currentIndex < youtubeVideos.length - visibleItems) {
@@ -50,7 +50,7 @@ export default function YoutubeScroll() {
     const handleScrollLeft = () => {
         const carousel = carouselRef.current;
         if (carousel) {
-            const itemWidth = carousel.firstChild.offsetWidth; // 獲取單個項目的寬度
+            const itemWidth = carousel.firstChild.offsetWidth + 10; // 獲取單個項目的寬度
 
             if (currentIndex > 0) {
                 setCurrentIndex((prev) => prev - 1);
@@ -79,7 +79,7 @@ export default function YoutubeScroll() {
                         ))}
                     </div>
                     {/* 右箭頭 */}
-                    <div className="youtubearrow youtube-arrow-right"onClick={handleScrollRight}>
+                    <div className="youtubearrow youtube-arrow-right" onClick={handleScrollRight}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                             <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
                         </svg>

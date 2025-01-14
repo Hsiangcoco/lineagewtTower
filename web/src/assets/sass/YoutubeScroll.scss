@@ -69,7 +69,6 @@
             display: flex;
             align-items: center;
             height: 30vh;
-            gap: 20px;
             overflow: hidden;
             scroll-behavior: smooth;
             width: calc(100%);
@@ -87,6 +86,8 @@
             a {
                 flex: 0 0 20%; // 每次顯示 5 個影片
                 text-align: center;
+                margin: 0 10px 0 0;
+
 
                 @media (max-width:1024px) {
                     flex: 0 0 50%;
@@ -101,6 +102,7 @@
                     border-radius: 10px;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 
                     @media (max-width:1440px) {}
 

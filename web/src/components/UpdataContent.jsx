@@ -56,13 +56,13 @@ export default function UpdataContent() {
                 <div className="log-content">
                     {updateLogs.map((log, index) => (
                         <div className="log-item" key={index}>
-                            <a href={log.link}>
+                            <Link to={log.link}>
                                 <div className="log-date">{log.date}</div>
                                 <div className="log-details">
                                     <h2>{log.title}</h2>
                                     <p>{log.description}</p>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     ))}
                 </div>

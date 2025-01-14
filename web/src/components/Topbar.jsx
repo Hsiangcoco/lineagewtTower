@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import '../assets/sass/Topbar.scss'
 import { useEffect, useState } from "react";
+import $ from 'jquery'
+import { FaFacebook } from "react-icons/fa";
 
 export default function Topbar() {
 
@@ -35,10 +37,26 @@ export default function Topbar() {
         );
     };
 
+    useEffect(() => {
+        const hamburger = $('.LT-hamburger');
+
+        // 先移除舊的事件
+        hamburger.off('click');
+
+        // 再綁定新的事件
+        hamburger.click(function () {
+            $(this).toggleClass('is-active');
+            $('.LT-navigation').toggleClass('show');
+        });
+
+        // 清除函式，當組件卸載時清除事件綁定
+        return () => {
+            hamburger.off('click');
+        };
+    }, []);
+
     return (
         <>
-            <Link to='#'>
-            </Link>
             <div className="LT-Topbar-page">
                 <div id="LT-header">
                     <div className="LT-Topbar">
@@ -73,7 +91,43 @@ export default function Topbar() {
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div className="LT-navbar-humburger">
+                    <button className="LT-hamburger">
+                        <span className="LT-bar"></span>
+                        <span className="LT-bar"></span>
+                        <span className="LT-bar"></span>
+                    </button>
+                    <nav className="LT-navigation">
+                        <ul className="LT-icon">
+                            <li>
+                                <Link to='https://www.facebook.com/Hsiangcoco8746' target="_blank">
+                                    <img src="./images/facebook.png" alt="Facebook超連結" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='https://www.instagram.com/hsiangcoco/' target="_blank">
+                                    <img src="./images/instagram.png" alt="IG超連結" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='https://www.youtube.com/@HsiangCo6666' target="_blank">
+                                    <img src="./images/youtube.png" alt="Youtube超連結" />
+                                </Link>
+                            </li>
+                        </ul>
+                        <ul className="LT-menu">
+                            <li><a href="#">遊戲公告</a></li>
+                            <li><a href="#">更新資訊</a></li>
+                            <li><a href="#">遊戲攻略</a></li>
+                            <li><a href="#">關於網站</a></li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+            </div >
         </>
 
     )

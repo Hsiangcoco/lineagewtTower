@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../assets/sass/Footer.scss'
 
 export default function Footer() {
@@ -6,40 +7,51 @@ export default function Footer() {
             <div className="LT-footer ">
                 <div className="LT-footer-bg-1">
                     <ul className="LT-footer-titletop">
-                        <a href="./page/gamenews.html">
+                        <Link to=''>
                             <p>遊戲公告</p>
-                        </a>
+                        </Link>
                         <li className="LT-footer-content" >
-                            <a href="./page/gamenews.html">
+                            <Link to=''>
                                 更新公告
-                            </a>
+
+                            </Link>
                         </li>
                         <li className="LT-footer-content"><a href="">維修公告</a></li>
                     </ul>
                 </div>
                 <div className="LT-footer-bg-1">
                     <ul className="LT-footer-titletop">
-                        <a href="./page/Strategy.html">
+                        <Link to=''>
                             <p>更新資訊</p>
-                        </a>
+                        </Link>
                         <li className="LT-footer-content">
-                            <a href="./page/gameupdata.html">
-                                CM情報</a>
+                            <Link to=''>
+                                CM情報
+                            </Link>
                         </li>
-                        <li className="LT-footer-content"><a href="">更新分析</a></li>
+                        <li className="LT-footer-content">
+                            <Link to=''>
+                                更新分析
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="LT-footer-bg-1">
 
                     <ul className="LT-footer-titletop">
-                        <a href="./page/Strategy.html">
+                        <Link to=''>
                             <p>遊戲攻略</p>
-                        </a>
+                        </Link>
                         <li className="LT-footer-content">
-                            <a href="./page/Strategy.html">
-                                轉職專區</a>
+                            <Link to=''>
+                                轉職專區
+                            </Link>
                         </li>
-                        <li className="LT-footer-content"><a href="">遊戲小知識</a></li>
+                        <li className="LT-footer-content">
+                            <Link to=''>
+                                遊戲小知識
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

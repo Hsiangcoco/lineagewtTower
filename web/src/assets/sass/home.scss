@@ -5,10 +5,12 @@
 .Home-page-1 {
     .Home-page-1-Banner {
         display: flex;
+
         @media (max-width:1024px) {
             margin-top: 10px;
             display: block;
         }
+
         @media (max-width:640px) {
             display: block;
             margin-top: 10px;
@@ -130,6 +132,14 @@
             height: 3px;
             background: gold;
             margin: 15px auto;
+        }
+    }
+}
+
+.Home-Footer {
+    .Footertext {
+        @media (max-width:640px) {
+            font-size: 0.8rem;
         }
     }
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/sass/BannerSlider.scss";
+import { Link } from "react-router-dom";
 
 export default function BannerSlider() {
     const [currentIndex, setCurrentIndex] = useState(0); // 當前橫幅索引
@@ -43,9 +44,9 @@ export default function BannerSlider() {
                                                 transition: "opacity 0.5s ease-in-out",
                                             }}
                                         >
-                                            <a href={banner.link}>
+                                            <Link to={banner.link}>
                                                 <img src={banner.img} alt={`Slide ${index + 1}`} />
-                                            </a>
+                                            </Link>
                                         </div>
                                     ))}
                                 </div>
