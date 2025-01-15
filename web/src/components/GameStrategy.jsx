@@ -6,7 +6,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg1.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "聖騎士轉職攻略",
             subtitle: "戰士轉職必看",
             date: "2024-11-12",
@@ -14,7 +14,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg2.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "修羅轉職攻略",
             subtitle: "修羅轉職必看",
             date: "2024-11-12",
@@ -22,7 +22,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg3.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "陣營站玩法攻略",
             subtitle: "要怎麼玩才能賺得多呢？",
             date: "2024-11-12",
@@ -30,7 +30,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg4.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "聖騎士轉職攻略",
             subtitle: "戰士轉職必看",
             date: "2024-11-12",
@@ -38,7 +38,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg2.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "修羅轉職攻略",
             subtitle: "修羅轉職必看",
             date: "2024-11-12",
@@ -46,7 +46,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg3.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "陣營站玩法攻略",
             subtitle: "要怎麼玩才能賺得多呢？",
             date: "2024-11-12",
@@ -54,7 +54,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg4.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "聖騎士轉職攻略",
             subtitle: "戰士轉職必看",
             date: "2024-11-12",
@@ -62,7 +62,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg2.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "修羅轉職攻略",
             subtitle: "修羅轉職必看",
             date: "2024-11-12",
@@ -70,7 +70,7 @@ export default function GameStrategy() {
         {
             imgSrc: "../images/youtubevideoimg3.svg",
             altText: "Memory of Lineage",
-            link: "/Strategycontent",
+            link: "",
             title: "陣營站玩法攻略",
             subtitle: "要怎麼玩才能賺得多呢？",
             date: "2024-11-12",

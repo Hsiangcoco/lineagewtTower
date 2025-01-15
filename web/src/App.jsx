@@ -1,4 +1,5 @@
 import './App.css'
+import About from './components/about';
 import BannerSilder from './components/BannerSlider';
 import Footer from './components/Footer';
 import GameNews from './components/GameNews';
@@ -13,13 +14,16 @@ import UpdataContent from './components/UpdataContent';
 import YoutubeScroll from './components/Youtubescroll';
 import Home from './pages/Home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NewsContent from './UpdataPage/News/NewsContent';
+import UpdataCm from './UpdataPage/Updata/UpdataCm';
+import StrategyContent from './UpdataPage/Strategy/StrategyConent';
 
 
 function App() {
 
   return (
     <>
-<GameStrategy></GameStrategy>
+      <StrategyContent></StrategyContent>
       {/* <Routes >
         <Route path='/' element={<Topbar />}></Route>
         <Route path="*" element={<h1>404 Not Found</h1>} />
