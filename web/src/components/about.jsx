@@ -7,7 +7,7 @@ export default function About() {
                 <div className="streamer-profile">
                     <header className="profile-header">
                         <div className="profile-info">
-                            <img src="../images/person_icon.png" alt="祥可可遊戲頻道" className="profile-avatar"/>
+                            <img src="./images/person_icon.png" alt="祥可可遊戲頻道" className="profile-avatar"/>
                                 <div className="profile-details">
                                     <h1 className="profile-name">祥可可遊戲頻道 GamesShow</h1>
                                     <p className="profile-stats">@HsiangCo6666 · 記得按讚訂閱分享～</p>
@@ -51,10 +51,10 @@ export default function About() {
                             <p className="social-text">期待與你一起在遊戲中相遇、共同冒險！👋</p>
                             <div className="social-icons">
                                 <a href="https://www.instagram.com/hsiangcoco/" target="_blank" className="social-icon instagram">
-                                    <img src="../images/icon_ig.png" alt="Instagram" />
+                                    <img src="./images/icon_ig.png" alt="Instagram" />
                                 </a>
                                 <a href="https://www.facebook.com/Hsiangcoco8746" target="_blank" className="social-icon facebook">
-                                    <img src="../images/icon_fb.png" alt="Facebook" />
+                                    <img src="./images/icon_fb.png" alt="Facebook" />
                                 </a>
                             </div>
                         </footer>

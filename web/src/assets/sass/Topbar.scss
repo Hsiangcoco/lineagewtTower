@@ -216,11 +216,11 @@
         /* 第三階段 */
         display: none;
         /* 第四階段 */
-        animation: hide 1s both;
+        animation: hide 0.5s both;
 
         &.show {
             display: flex;
-            animation: show 1s both;
+            animation: show 0.5s both;
         }
 
         @keyframes show {

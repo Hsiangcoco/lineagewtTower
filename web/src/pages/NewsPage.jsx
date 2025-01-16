@@ -20,7 +20,7 @@ export default function NewsPage() {
                     <div className="All-page-left">
                         <Link to='/News'>
                             <div className="Top-title">
-                                <img src="../images/gamenews-img-1.png" alt="" />
+                                <img src="./images/gamenews-img-1.png" alt="" />
                                 <p>遊戲公告</p>
                             </div>
                         </Link>

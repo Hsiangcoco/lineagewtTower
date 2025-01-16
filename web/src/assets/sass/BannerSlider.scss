@@ -109,6 +109,9 @@
                                         background: #DAA520;
                                         z-index: 10;
                                         transition: all 0.3s;
+                                        @media (max-width:640px) {
+top: 35px;
+                                        }
 
                                         &.active {
                                             .progressbar-filltop {

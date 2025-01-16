@@ -3,7 +3,7 @@ import '../../assets/sass/UpdataCm.scss';
 export default function UpdataCm() {
     // 圖片資料陣列
     const images = [
-        { src: "../images/updada-cm-1-2.jpg", alt: "更新公告圖片1" },
+        { src: "./images/updada-cm-1-2.jpg", alt: "更新公告圖片1" },
     ];
 
     return (

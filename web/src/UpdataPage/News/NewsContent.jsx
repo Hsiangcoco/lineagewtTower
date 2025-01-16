@@ -5,7 +5,7 @@ export default function NewsContent() {
     const newsContent = {
         title: "[說明] 12/1(日)「每月簽到鑄幣(21日)」商品說明(骷髏世界除外)",
         date: "發布時間:2024/12/01",
-        imageSrc: "../images/gamenote-img-1.png",
+        imageSrc: "./images/gamenote-img-1.png",
         intro: {
             greeting: "大家好，我們是天堂W",
             description: "天堂W新增商品內容如下",

@@ -61,7 +61,7 @@ export default function Topbar() {
                     <div className="LT-Topbar">
                         <Link to='/'>
                             <h1 className="LT-title">
-                                <img className="logoimg" src="/images/logo.svg" alt="" />
+                                <img className="logoimg" src="./images/logo.svg" alt="" />
                                 天堂W攻略聖所
                             </h1>
                         </Link>

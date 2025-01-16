@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export default function BannerSlider() {
     const [currentIndex, setCurrentIndex] = useState(0); // 當前橫幅索引
     const banners = [
-        { id: "banner1", img: "/images/navbar-img-1.jpg", link: "/NewsContent" },
-        { id: "banner2", img: "/images/navbar-img-2.jpg", link: "/NewsContent" },
-        { id: "banner3", img: "/images/navbar-img-3.jpg", link: "/NewsContent" },
+        { id: "banner1", img: "./images/navbar-img-1.jpg", link: "/NewsContent" },
+        { id: "banner2", img: "./images/navbar-img-2.jpg", link: "/NewsContent" },
+        { id: "banner3", img: "./images/navbar-img-3.jpg", link: "/NewsContent" },
     ];
 
     // 自動切換功能

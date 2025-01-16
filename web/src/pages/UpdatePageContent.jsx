@@ -5,10 +5,11 @@ import Footer from "../components/Footer";
 import '../assets/sass/Allpage.scss'
 import UpdataCm from "../UpdataPage/Updata/UpdataCm";
 import GotopButton from "../components/GotopButton";
+import { Link } from "react-router-dom";
 
 
 
-export default function UpdataPageContent() {
+export default function UpdatePageContent() {
 
 
 
@@ -22,7 +23,7 @@ export default function UpdataPageContent() {
                     <div className="All-page-left">
                         <Link to='/Update'>
                             <div className="Top-title">
-                                <img src="../images/gamenews-img-1.png" alt="" />
+                                <img src="./images/gamenews-img-1.png" alt="" />
                                 <p>更新資訊</p>
                             </div>
                         </Link>

@@ -19,7 +19,7 @@ export default function AboutPage() {
                     <div className="All-page-left">
                         <Link to='/AboutPage'>
                             <div className="Top-title">
-                                <img src="../images/gamenews-img-1.png" alt="" />
+                                <img src="./images/gamenews-img-1.png" alt="" />
                                 <p>關於網站</p>
                             </div>
                         </Link>

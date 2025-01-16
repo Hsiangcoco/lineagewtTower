@@ -4,7 +4,7 @@ import '../assets/sass/GameStrategy.scss';
 export default function GameStrategy() {
     const memoryCards = [
         {
-            imgSrc: "../images/youtubevideoimg1.svg",
+            imgSrc: "./images/youtubevideoimg1.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "聖騎士轉職攻略",
@@ -12,7 +12,7 @@ export default function GameStrategy() {
             date: "2024-11-12",
         },
         {
-            imgSrc: "../images/youtubevideoimg2.svg",
+            imgSrc: "./images/youtubevideoimg2.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "修羅轉職攻略",
@@ -20,7 +20,7 @@ export default function GameStrategy() {
             date: "2024-11-12",
         },
         {
-            imgSrc: "../images/youtubevideoimg3.svg",
+            imgSrc: "./images/youtubevideoimg3.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "陣營站玩法攻略",
@@ -28,7 +28,7 @@ export default function GameStrategy() {
             date: "2024-11-12",
         },
         {
-            imgSrc: "../images/youtubevideoimg4.svg",
+            imgSrc: "./images/youtubevideoimg4.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "聖騎士轉職攻略",
@@ -36,7 +36,7 @@ export default function GameStrategy() {
             date: "2024-11-12",
         },
         {
-            imgSrc: "../images/youtubevideoimg2.svg",
+            imgSrc: "./images/youtubevideoimg2.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "修羅轉職攻略",
@@ -44,7 +44,7 @@ export default function GameStrategy() {
             date: "2024-11-12",
         },
         {
-            imgSrc: "../images/youtubevideoimg3.svg",
+            imgSrc: "./images/youtubevideoimg3.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "陣營站玩法攻略",
@@ -52,7 +52,7 @@ export default function GameStrategy() {
             date: "2024-11-12",
         },
         {
-            imgSrc: "../images/youtubevideoimg4.svg",
+            imgSrc: "./images/youtubevideoimg4.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "聖騎士轉職攻略",
@@ -60,7 +60,7 @@ export default function GameStrategy() {
             date: "2024-11-12",
         },
         {
-            imgSrc: "../images/youtubevideoimg2.svg",
+            imgSrc: "./images/youtubevideoimg2.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "修羅轉職攻略",
@@ -68,7 +68,7 @@ export default function GameStrategy() {
             date: "2024-11-12",
         },
         {
-            imgSrc: "../images/youtubevideoimg3.svg",
+            imgSrc: "./images/youtubevideoimg3.svg",
             altText: "Memory of Lineage",
             link: "/StrategyContent",
             title: "陣營站玩法攻略",
