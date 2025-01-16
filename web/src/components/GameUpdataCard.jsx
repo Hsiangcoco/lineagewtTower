@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import '../assets/sass/GameUpdata.scss';
+import '../assets/sass/GameUpdataCard.scss';
 
-export default function GameUpdata() {
+export default function GameUpdataCard() {
     const newsCards = [
         {
             imgSrc: "../images/gameupdata-boximg-1.jpg",
@@ -19,7 +19,7 @@ export default function GameUpdata() {
             imgSrc: "../images/gameupdata-boximg-2.jpg",
             altText: "更新新聞",
             overlayTitle: "更新新聞",
-            overlaySubtitle: "1月 第1週",
+            overlaySubtitle: "1月 第1週", 
             title1: "[新聞] 1月 第1週更新新聞",
             title2: "聖誕年末更新",
             link: "/updata",
@@ -97,7 +97,7 @@ export default function GameUpdata() {
                         <Link to={card.link}>
                             {card.title2}
                         </Link>
-                    </div>
+                    </div> 
                     <div className="GU-card-footer">
                         <div className="GU-author">
                             <img src={card.authorImg} alt={card.authorName} />

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../assets/sass/Home.scss'
+import '../assets/sass/Allpage.scss'
 import Topbar from '../components/Topbar'
 import BannerSlider from '../components/BannerSlider'
 import UpdataContent from '../components/UpdataContent'
@@ -12,7 +12,7 @@ import Footer from '../components/Footer'
 export default function Home() {
     return (
         <>
-            <div>
+            <div id='Home-Allpage'>
                 <div className='Home-page-1'>
                     <div className='Topbar'>
                         <Topbar />
@@ -39,18 +39,9 @@ export default function Home() {
                     <h2 className="profession-title">職業專區</h2>
                     <Porfession />
                 </div>
-                <div className='Home-Footer'>
-                    <div className='Footertext'>
-                        <p>此網站為熱心整理無任何商業用途</p>
-                    </div>
+                <div className='All-page-Footer'>
                     <Footer />
-
                 </div>
-
-
-
-
-
             </div>
         </>
 

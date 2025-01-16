@@ -1,11 +1,24 @@
+import { useEffect } from 'react';
 import '../../assets/sass/StrategyContent.scss'
 import $ from 'jquery'
+import { Link as ScrollLink } from "react-scroll";
+
 
 export default function StrategyContent() {
 
-    $(".floating-nav").click(function () {
-        $(this).toggleClass('active')
-    })
+    useEffect(() => {
+        const handleClick = function () {
+            $(this).toggleClass("active");
+        };
+
+        $(".floating-nav").on("click", handleClick);
+
+        return () => {
+            $(".floating-nav").off("click", handleClick); // 清除绑定的事件
+        };
+    }, []);
+
+
     return (
         <>
             <div className="SC-content-bg">
@@ -211,19 +224,69 @@ export default function StrategyContent() {
                         </div>
                     </aside>
 
-                    <aside className="floating-nav ">
+                    <aside className="floating-nav">
                         <button className="nav-toggle" aria-label="展開導航">
                             <span className="toggle-icon"></span>
                             <span className="toggle-text">導航選單</span>
                         </button>
-                        <div className="nav-content ">
+                        <div className="nav-content">
                             <div className="nav-header">點擊下方連結快速導航</div>
                             <ul className="nav-list">
-                                <li><a href="#content-text" className="nav-link">原始機體</a></li>
-                                <li><a href="#product-info" className="nav-link">轉職技能選擇</a></li>
-                                <li><a href="#reward-info" className="nav-link">轉職後機體</a></li>
-                                <li><a href="#reward-info" className="nav-link">轉職前後差異</a></li>
-                                <li><a href="#reward-info" className="nav-link">整體心得</a></li>
+                                <li>
+                                    <ScrollLink
+                                        to="content-text"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50} // 可調整滾動位置的偏移量
+                                        className="nav-link"
+                                    >
+                                        原始機體
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        to="product-info"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        轉職技能選擇
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        to="reward-info"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        轉職後機體
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        to="reward-info"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        轉職前後差異
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        to="reward-info"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        整體心得
+                                    </ScrollLink>
+                                </li>
                             </ul>
                         </div>
                     </aside>

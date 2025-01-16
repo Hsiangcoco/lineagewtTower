@@ -108,7 +108,7 @@ export default function NewsContent() {
                         <li><a href="#">轉職攻略-轉職前必看</a></li>
                         <li><a href="#">轉職攻略-轉職前必看</a></li>
                         <li><a href="#">轉職攻略-轉職前必看</a></li>
-                    </ul>
+                    </ul> 
                 </div>
         </div>
     );

@@ -56,7 +56,7 @@ const newsData = [
 export default function NewsCard() {
     return (
         <div className="LT-gamenews-bk-all">
-            {newsData.map((news, index) => (
+            {newsData.map((news, index) => ( 
                 <div className="LT-gamenews-bk-sm-1" key={index}>
                     <Link to={news.link} className="overlay-link">
                         <img src={news.imgSrc} alt={news.title} />

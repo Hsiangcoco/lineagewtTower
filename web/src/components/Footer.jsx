@@ -37,7 +37,6 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="LT-footer-bg-1">
-
                     <ul className="LT-footer-titletop">
                         <Link to=''>
                             <p>遊戲攻略</p>
@@ -53,6 +52,9 @@ export default function Footer() {
                             </Link>
                         </li>
                     </ul>
+                </div>
+                <div className='Footertext'>
+                    <p>此網站為熱心整理無任何商業用途</p>
                 </div>
             </div>
         </>
