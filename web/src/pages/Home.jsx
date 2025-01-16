@@ -1,25 +1,25 @@
-import { Link } from 'react-router-dom'
 import '../assets/sass/Allpage.scss'
 import Topbar from '../components/Topbar'
 import BannerSlider from '../components/BannerSlider'
-import UpdataContent from '../components/UpdataContent'
+import UpdateContent from '../components/UpdateContent'
 import NewsCard from '../components/NewsCard'
 import YoutubeScroll from '../components/Youtubescroll'
 import Porfession from '../components/Profession'
 import Footer from '../components/Footer'
+import GotopButton from "../components/GotopButton";
 
 
 export default function Home() {
     return (
         <>
-            <div id='Home-Allpage'>
+            <div id='Home-Allpage'> 
                 <div className='Home-page-1'>
                     <div className='Topbar'>
                         <Topbar />
                     </div>
                     <div className='Home-page-1-Banner'>
                         <BannerSlider />
-                        <UpdataContent />
+                        <UpdateContent />
                     </div>
                 </div>
 
@@ -42,6 +42,8 @@ export default function Home() {
                 <div className='All-page-Footer'>
                     <Footer />
                 </div>
+                <GotopButton />
+
             </div>
         </>
 

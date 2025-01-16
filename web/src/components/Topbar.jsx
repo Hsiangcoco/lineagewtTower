@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import '../assets/sass/Topbar.scss'
 import { useEffect, useState } from "react";
 import $ from 'jquery'
-import { FaFacebook } from "react-icons/fa";
 
 export default function Topbar() {
 
@@ -29,7 +28,7 @@ export default function Topbar() {
                 <ul style={{ transform: `translateY(-${currentIndex * 25}px)` }}>
                     {announcements.map((announcement, index) => (
                         <li key={index} className={currentIndex === index ? "active" : ""}>
-                            <Link to="#">{announcement}</Link>
+                            <Link to="/News">{announcement}</Link>
                         </li>
                     ))}
                 </ul>
@@ -60,23 +59,23 @@ export default function Topbar() {
             <div className="LT-Topbar-page">
                 <div id="LT-header">
                     <div className="LT-Topbar">
-                        <Link to='#'>
+                        <Link to='/'>
                             <h1 className="LT-title">
                                 <img className="logoimg" src="/images/logo.svg" alt="" />
                                 天堂W攻略聖所
                             </h1>
                         </Link>
                         <div className='LT-Navbar'>
-                            <Link to='#'>
+                            <Link to='/News'>
                                 <p className="LT-navbartitle">遊戲公告</p>
                             </Link>
-                            <Link to='#'>
+                            <Link to='/Update'>
                                 <p className="LT-navbartitle">更新資訊</p>
                             </Link>
-                            <Link to='#'>
+                            <Link to='/Strategy'>
                                 <p className="LT-navbartitle">遊戲攻略</p>
                             </Link>
-                            <Link to='#'>
+                            <Link to='/AboutPage'>
                                 <p className="LT-navbartitle">關於網站</p>
                             </Link>
                         </div>
@@ -117,10 +116,18 @@ export default function Topbar() {
                             </li>
                         </ul>
                         <ul className="LT-menu">
-                            <li><a href="#">遊戲公告</a></li>
-                            <li><a href="#">更新資訊</a></li>
-                            <li><a href="#">遊戲攻略</a></li>
-                            <li><a href="#">關於網站</a></li>
+                            <li>
+                                <Link to="/News">遊戲公告</Link>
+                            </li>
+                            <li>
+                                <Link to="/Update">更新資訊</Link>
+                            </li>
+                            <li>
+                                <Link to="/Strategy">遊戲攻略</Link>
+                            </li>
+                            <li>
+                                <Link to="/AboutPage">關於網站</Link>
+                            </li>
                         </ul>
                     </nav>
 

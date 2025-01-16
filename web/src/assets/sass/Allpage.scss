@@ -2,10 +2,12 @@
 @use './variables/'as *;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
+
+//共通區域
 //Topbar
 #All-page-topbar {
     @media (max-width:1024px) {
-        padding: 5px;
+        padding: 5px 5px 15px 5px;
     }
 
     @media (max-width:640px) {
@@ -13,7 +15,7 @@
     }
 }
 
-//共通位置 標題大字
+//標題大字
 .Top-title {
     position: relative;
     z-index: 1;
@@ -92,12 +94,12 @@
 
     @media (max-width:1024px) {
         display: block;
-        margin: 0px 5px;
+        margin: 0px 10px;
     }
 
     @media (max-width:640px) {
         display: block;
-        margin: 0px 5px;
+        margin: 0px 10px;
     }
 
     .HotNews {
@@ -117,6 +119,7 @@
     margin-bottom: 15px;
 }
 
+//個別分頁內容
 //首頁
 #Home-Allpage {
     .Home-page-1 {
@@ -296,6 +299,7 @@
 
 //更新資訊
 #UP-Allpage {
+
     .All-page-left {
         .Top-title {
             p {
@@ -309,4 +313,178 @@
             }
         }
     }
+
+    .GameUpdata {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+
+        .GameUpdata-bg {
+            margin-left: 50px;
+
+            @media (max-width:1024px) {
+                margin-left: 100px;
+
+            }
+
+            @media (max-width:640px) {
+                margin-left: 50px;
+
+            }
+        }
+    }
+}
+
+//更新資訊內容
+#UPC-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '更新資訊';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameUpdata {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+
+        .GameUpdata-bg {
+            margin-left: 50px;
+
+            @media (max-width:1024px) {
+                margin-left: 100px;
+
+            }
+
+            @media (max-width:640px) {
+                margin-left: 50px;
+
+            }
+        }
+    }
+
+}
+
+//攻略頁面
+#SP-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '遊戲攻略';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameStrategy {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+        padding-left: 50px;
+
+        @media (max-width:1024px) {
+            padding-left: 50px;
+            margin-bottom: 15px;
+
+        }
+
+        @media (max-width:640px) {
+            padding-left: 0px;
+
+        }
+    }
+
+}
+
+//攻略內容
+#SPC-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '遊戲攻略';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameStrategy {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+        padding-left: 50px;
+
+        @media (max-width:1024px) {
+            padding-left: 50px;
+            margin-bottom: 15px;
+
+        }
+
+        @media (max-width:640px) {
+            padding-left: 0px;
+
+        }
+    }
+
+    .ButtonNone {
+        @media (max-width:1024px) {
+            display: none;
+        }
+
+        @media (max-width:640px) {
+            display: none;
+        }
+    }
+
+}
+
+//關於我們
+#AP-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '關於網站';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameAbout {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+
+        @media (max-width:1024px) {
+            margin-bottom: 15px;
+
+        }
+
+        @media (max-width:640px) {
+            padding-left: 0px;
+
+        }
+    }
+
 }

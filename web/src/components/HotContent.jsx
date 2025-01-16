@@ -6,16 +6,16 @@ export default function HotContent() {
         {
             header: "最新內容",
             items: [
-                { text: "11/29(五) 已知問題公告", link: "" },
-                { text: "特別直播Director's Talk獎勵說明", link: "" },
-                { text: "「藝術家的咒語卡片箱(刻印)」暫時無法使用說明", link: "" },
+                { text: "11/29(五) 已知問題公告", link: "/NewsContent" },
+                { text: "特別直播Director's Talk獎勵說明", link: "/NewsContent" },
+                { text: "「藝術家的咒語卡片箱(刻印)」暫時無法使用說明", link: "/NewsContent" },
             ],
         },
         {
             header: "熱門攻略",
             items: [
-                { text: "職業轉換-修羅轉戰士特輯", link: "" },
-                { text: "魔眼素質最新攻略", link: "" },
+                { text: "職業轉換-修羅轉戰士特輯", link: "/StrategyContent" },
+                { text: "魔眼素質最新攻略", link: "/StrategyContent" },
                 { text: "通行證2600元價值真的要買嗎？", link: "" },
             ],
         },
@@ -45,7 +45,9 @@ export default function HotContent() {
                                         {item.text}
                                     </a>
                                 ) : (
-                                    <Link to={item.link}>{item.text}</Link>
+                                    <Link to={item.link} >
+                                        {item.text}
+                                    </Link>
                                 )}
                             </div>
                         ))}

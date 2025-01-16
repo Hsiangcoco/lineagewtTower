@@ -7,30 +7,34 @@ export default function Footer() {
             <div className="LT-footer ">
                 <div className="LT-footer-bg-1">
                     <ul className="LT-footer-titletop">
-                        <Link to=''>
+                        <Link to='/News'>
                             <p>遊戲公告</p>
                         </Link>
                         <li className="LT-footer-content" >
-                            <Link to=''>
+                            <Link to='/NewsContent'>
                                 更新公告
 
                             </Link>
                         </li>
-                        <li className="LT-footer-content"><a href="">維修公告</a></li>
+                        <li className="LT-footer-content">
+                            <Link to='/NewsContent'>
+                                維修公告
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="LT-footer-bg-1">
                     <ul className="LT-footer-titletop">
-                        <Link to=''>
+                        <Link to='/Update'>
                             <p>更新資訊</p>
                         </Link>
                         <li className="LT-footer-content">
-                            <Link to=''>
+                            <Link to='/UpdateContent'>
                                 CM情報
                             </Link>
                         </li>
                         <li className="LT-footer-content">
-                            <Link to=''>
+                            <Link to='/UpdateContent'>
                                 更新分析
                             </Link>
                         </li>
@@ -38,16 +42,16 @@ export default function Footer() {
                 </div>
                 <div className="LT-footer-bg-1">
                     <ul className="LT-footer-titletop">
-                        <Link to=''>
+                        <Link to='/Strategy'>
                             <p>遊戲攻略</p>
                         </Link>
                         <li className="LT-footer-content">
-                            <Link to=''>
+                            <Link to='/StrategyContent'>
                                 轉職專區
                             </Link>
                         </li>
                         <li className="LT-footer-content">
-                            <Link to=''>
+                            <Link to='/StrategyContent'>
                                 遊戲小知識
                             </Link>
                         </li>

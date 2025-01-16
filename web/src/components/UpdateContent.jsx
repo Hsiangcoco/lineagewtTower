@@ -2,44 +2,44 @@ import '../assets/sass/UpdataContent.scss'
 import { Link } from "react-router-dom"
 
 
-export default function UpdataContent() {
+export default function UpdateContent() {
 
     const updateLogs = [
         {
             date: "01.08",
             title: "Youtube影片上架",
             description: "影片版更新內容",
-            link: "./page/notice.html",
+            link: "/UpdateContent",
         },
         {
             date: "01.08",
             title: "1月第二週更新細節",
             description: "更新細節說明",
-            link: "./page/notice.html",
+            link: "/UpdateContent",
         },
         {
             date: "01.01",
             title: "1月第二週CM情報",
             description: "情報圖片更新",
-            link: "./page/notice.html",
+            link: "/UpdateContent",
         },
         {
             date: "01.08",
             title: "Youtube影片上架",
             description: "影片版更新內容",
-            link: "./page/notice.html",
+            link: "/UpdateContent",
         },
         {
             date: "01.02",
             title: "本週更新細節",
             description: "更新細節說明",
-            link: "./page/notice.html",
+            link: "/UpdateContent",
         },
         {
             date: "01.02",
             title: "本週更新細節",
             description: "更新細節說明",
-            link: "./page/notice.html",
+            link: "/UpdateContent",
         },
     ];
 

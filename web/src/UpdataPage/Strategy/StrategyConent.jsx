@@ -215,11 +215,61 @@ export default function StrategyContent() {
                         <div className="sticky">
                             <div className="nav-header">點擊下方連結快速導航</div>
                             <ul className="nav-list">
-                                <li><a href="#content-text" className="nav-link">原始機體</a></li>
-                                <li><a href="#product-info" className="nav-link">轉職技能選擇</a></li>
-                                <li><a href="#reward-info" className="nav-link">轉職後機體</a></li>
-                                <li><a href="#reward-info" className="nav-link">轉職前後差異</a></li>
-                                <li><a href="#reward-info" className="nav-link">整體心得</a></li>
+                                <li>
+                                    <ScrollLink
+                                        to="content-text"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        原始機體
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        to="product-info"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        轉職技能選擇
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        to="reward-info"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        轉職後機體
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        to="reward-info"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        轉職前後差異
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        to="reward-info"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        整體心得
+                                    </ScrollLink>
+                                </li>
                             </ul>
                         </div>
                     </aside>
@@ -285,6 +335,17 @@ export default function StrategyContent() {
                                         className="nav-link"
                                     >
                                         整體心得
+                                    </ScrollLink>
+                                </li>
+                                <li className="nav-header-Top">
+                                    <ScrollLink
+                                        to="LT-Topbar-page"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                        className="nav-link"
+                                    >
+                                        回到最上面
                                     </ScrollLink>
                                 </li>
                             </ul>

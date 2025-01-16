@@ -8,7 +8,7 @@ export default function UpdataCm() {
 
     return (
         <div className="UpdataC-content-bg">
-            {/* 動態渲染圖片 */}
+            {/* 動態渲染圖片 */} 
             {images.map((image, index) => (
                 <img key={index} src={image.src} alt={image.alt} />
             ))}
